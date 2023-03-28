@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #0076c6;
+  --dark-text:#fff;
+  --light-text:#000;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  background-color: #F4F6F7;
+  position: relative;
+  overflow: hidden;
+}
+
+nav {
+  padding: 0 1.35rem;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height:8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+
+
+/* stest */
+
+
+
+/* stest */
+
+
+#logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: relative;
+  display: inline;
+}
+
+#logo i {
+  font-size: 1.2rem;
+  position: absolute;
+  top:-15%;
+  right: -15%;
+  color:var(--primary-color);
+}
+
+
+.page {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+}
+
+
+.menu a {
+  margin: 0 2rem;
+  text-decoration: none;
+  color:#000;
+  font-weight: 400;
+  user-select: none;
+}
+
+#home {
+  display: flex;
+  height: 100vh;
+}
+
+#home-left {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#home-right {
+  width: 50vw;
+}
+
+#avater-box {
+  width: 25rem;
+  height: 25rem;
+  overflow: hidden;
+}
+
+#avater-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+.wrapper {
+  padding: 9vh 12% 0 12%;
+}
+
+.project-page-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
+  user-select: none;
+}
+
+
+#project-subtitle {
+  text-align: center;
+  opacity: 0.65;
+}
+
+.project-page-title i{
+  font-size: 1.35rem;
+}
+
+/* project */
+.project {
+  width: 100%;
+}
+.project-img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color:var(--primary-color);
+}
+.project-links span {
+  margin-right:0.5rem ;
+}
+.project-links i {
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.project-links i:hover {
+  transform: scale(1.1);
+}
+
+.project-desc {
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-language span{
+  background-color: var(--primary-color);
+  padding: 2px 5px;
+  color: #fff;
+}
+
+.social-tag {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  right: 2%;
+  z-index: 3;
+}
+
+.social-tag i {
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.social-tag i:hover {
+  transform: scale(1.1);
+}
+
+#tag-bar {
+  width: 5px;
+  height: 10vh;
+  background-color: rgba(0,0,0,0.5);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 2px;
+  opacity: 0.65;
+  font-size: 12px;
+}
+
+#hi {
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+#greet {
+  color:#000;
+  user-select: none;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#myname {
+  font-weight: bold;
+  font-size: 4rem;
+  user-select: none;
+}
+
+
+#carrier {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  user-select: none;
+}
+
+#desc {
+  text-align: justify;
+}
+
+#about, #service {
+  width: 100vw;
+  height: 100vh;
+}
+.about-con, .service-con {
+  display: flex;
+  justify-content: space-between;
+}
+#about-left {
+  margin-top: 5%;
+  width: 30vw;
+}
+#about-left p {
+  text-align: justify;
+}
+
+#about-left ul li, #about-right ul li, #service-left ul li {
+  margin: 1rem 0;
+}
+
+#about-right {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+}
+
+#service-left {
+  margin-top: 10%;
+  width: 30vw;
+}
+
+#service-right {
+  width: 30vw;
+}
+.about-img img {
+  margin-top: 10rem;
+  width: 26rem;
+}
+
+#about-right #coding {
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+
+.lang {
+  width: 40px;
+}
