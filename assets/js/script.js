@@ -1,5 +1,7 @@
 //  page open
-let pageOpen = (page) => {
+let pageOpen = (page, event) => {
+  event.preventDefault();
+
   if (page == "home") {
     $("#home").show();
     $("#about").hide();
