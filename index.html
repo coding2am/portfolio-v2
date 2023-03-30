@@ -5,27 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Thura Sitt Naing</title>
+
+    <!-- owl carosel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+
+    <!-- owl theme carosel -->
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
     <!-- bootstrap -->
-    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- animatee -->
+    <link rel="stylesheet" href="./css/animate.min.css" />
+
     <!-- fontawesome -->
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.3.0/css/all.css"
     />
 
-    <!-- animated css -->
-    <link rel="stylesheet" href="./assets/css/animate.min.css" />
-    <!-- owl -->
-    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <!-- style  -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- responsive -->
+    <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
-    <div class="app">
-      <!-- social tag start -->
-      <div class="social-tag">
+    <!-- App Start -->
+    <div id="app">
+
+       <!-- social tag start -->
+       <div class="social-tag">
         <a href="https://github.com/coding2am" target="_blank">
           <i class="fa-brands fa-github" style="color: #34495e"></i>
         </a>
@@ -68,42 +78,60 @@
       </nav>
       <!-- navigation end-->
 
-      <!-- home -->
-      <div id="home" class="wrapper page animate__animated animate__bounceInUp">
-        <div id="home-left">
-          <div id="avater-box">
-            <img src="./assets/images/gif/Programming.gif" alt="" />
+      <!-- home start -->
+      <div id="home" class="page animate__animated animate__bounceInUp">
+        <div class="home-container">
+          <div class="left">
+            <img src="./assets/images/gif/home.gif" class="home-gif" alt="" />
           </div>
-        </div>
-        <div id="home-right">
-          <div>
-            <p id="greet"><span id="hi">Hi</span> , my name is</p>
-            <p id="myname">Thura Sitt Naing</p>
-            <p id="desc">
-              <i class="fa-solid fa-thumbtack text-danger"></i>
-              A Web Developer and I can be invloved in your project as you need
-              me from the seed of an idea to creative design.
-            </p>
-            <div>
-              <a
-                href="mailto:coding2am@gmail.com"
-                id="cbtn"
-                class="btn btn-primary"
-                ><i class="fa-regular fa-message-middle me-2"></i> Contact Me</a
-              >
+          <div class="right">
+            <div id="home_content">
+              <div id="greet">HI, MY NAME IS</div>
+              <!-- My Name -->
+              <h1 class="bouncing-letters" id="myname">
+                <span>T</span>
+                <span>H</span>
+                <span>U</span>
+                <span>R</span>
+                <span>A</span>
+                <span></span>
+                <span>S</span>
+                <span>I</span>
+                <span>T</span>
+                <span>T</span>
+                <span></span>
+                <span>N</span>
+                <span>A</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+              </h1>
+              <!-- My Name -->
+
+              <div id="desc">
+                <i class="fa-solid fa-thumbtack text-danger"></i>
+                I am a web developer and I can be invloved in your project as
+                you need me from the seed of an idea to creative design.
+              </div>
+              <div class="mt-3">
+                <a href="mailto:coding2am@gmail.com" class="myBtn">
+                  <i class="fa-regular fa-message-middle me-2"></i>
+                  Contact Me
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- home -->
+      <!-- home end -->
 
-      <!-- about -->
+      <!-- about start -->
       <div id="about" class="page animate__animated animate__bounceInUp">
-        <div class="wrapper">
-          <div class="about-con">
-            <div id="about-left">
+        <div class="about-container">
+          <div class="left">
+            <div class="about-content">
               <h5 class="text w-100 fw-bold sub-title">About Me</h5>
-              <p class="">
+              <p id="myself">
                 Hello, My name is Thura Sitt Naing and a web developer. My
                 journey in web development started as a hobby, but it quickly
                 turned into a career path as I discovered my love for coding and
@@ -123,32 +151,30 @@
                 <li class="">Lived In : Nay Pyi Taw, Zabuthiri</li>
               </ul>
             </div>
-
-            <div id="about-right" class="">
-              <div class="about-img">
-                <img src="./assets/images/gif/Nerd.gif" alt="" />
-              </div>
-            </div>
+          </div>
+          <div class="right">
+            <img src="./assets/images/gif/Nerd.gif" class="about-gif" alt="" />
           </div>
         </div>
       </div>
-      <!-- about -->
+      <!-- about end -->
 
-      <!-- service -->
+      <!-- service start -->
       <div id="service" class="page animate__animated animate__bounceInUp">
-        <div class="wrapper">
-          <div class="service-con">
-            <div id="service-right" class="mt-3">
-              <div class="about-img">
-                <img src="./assets/images/gif/Next.gif" alt="" />
-              </div>
-            </div>
-
-            <div id="service-left">
+        <div class="service-container">
+          <div class="left">
+            <img
+              src="./assets/images/gif/Next.gif"
+              class="service-gif"
+              alt=""
+            />
+          </div>
+          <div class="right">
+            <div>
               <h5 class="text fw-bold mb-4 sub-title">
                 Experiences and the skills I have
               </h5>
-              <ul class="mb-3">
+              <ul>
                 <li>
                   Web Developer at Linn IT & Solution <small>(Current)</small>
                 </li>
@@ -166,59 +192,61 @@
                 </li>
               </ul>
 
-              <h5 class="fw-bold sub-title">Languages and tools:</h5>
+              <h5 id="tools_header" class="fw-bold sub-title">
+                Languages and tools:
+              </h5>
               <div class="tools">
                 <img
                   src="./assets/images/languages/html-5.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="HTML5"
                 />
 
                 <img
                   src="./assets/images/languages/css-3.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="CSS3"
                 />
 
                 <img
                   src="./assets/images/languages/javascript.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="JS"
                 />
 
                 <img
                   src="./assets/images/languages/react.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="React"
                 />
 
                 <img
                   src="./assets/images/languages/php.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="PHP"
                 />
 
                 <img
                   src="./assets/images/languages/laravel.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="Laravel"
                 />
 
                 <img
                   src="./assets/images/languages/mysql.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="MySQL"
                 />
 
                 <img
                   src="./assets/images/languages/github.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="GitHub"
                 />
 
                 <img
                   src="./assets/images/languages/linux.png"
-                  class="lang mr-2"
+                  class="lang"
                   title="Linux"
                 />
               </div>
@@ -226,18 +254,18 @@
           </div>
         </div>
       </div>
-      <!-- service -->
+      <!-- service end -->
 
-      <!-- project -->
+      <!-- project start -->
       <div id="project" class="page animate__animated animate__bounceInUp">
-        <div class="wrapper project-wrapper">
+        <div class="project-page">
           <div class="project-page-title">
             <i class="fa-solid fa-diagram-project"></i> My Projects
           </div>
           <div id="project-subtitle" class="mb-5">
             "Talk is cheap. Show me the code." - Linus Torvalds
           </div>
-          <div class="project-container owl-carousel owl-theme g-5 p-0">
+          <div class="project-container owl-carousel owl-theme g-5">
             <!-- project -->
             <div class="project item">
               <img
@@ -403,24 +431,24 @@
             <!-- project -->
           </div>
         </div>
+        </div>
       </div>
-      <!-- project -->
+      <!-- project end -->
 
       <footer>
-        <i class="fa-solid fa-solid fa-copyright" style="font-size: 12px"></i>
+        <i class="fa-solid fa-solid fa-copyright"></i>
         2023 developed by thurasittnaing
       </footer>
     </div>
+    <!-- App End -->
 
-    <!-- scripts -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <!-- JQuery -->
+    <script src="./js/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Owl -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- Script -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
