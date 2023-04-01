@@ -154,20 +154,20 @@ nav {
 }
 
 .myBtn {
+  background-color: #fff;
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 1px solid var(--primary-color);
   text-decoration: none;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
-  background-color: var(--primary-color);
-  color:#fff;
   transition: 0.5s ease-in-out;
   user-select: none;
 }
 
 .myBtn:hover {
-  background-color: #fff;
-  color: var(--primary-color);
-  font-weight: bold;
-  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color:#fff;
 }
 
 #greet {
