@@ -82,6 +82,11 @@ $(".stop").on("click", function () {
 });
 
 $(document).ready(function () {
+  new TypeIt("#project-subtitle", {
+    strings: '"Talk is cheap. Show me the code." - Linus Torvalds',
+    loop: false,
+  }).go();
+
   // init
   $("#home").show();
   $("#about").hide();
